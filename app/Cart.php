@@ -11,7 +11,7 @@ class Cart extends Model
 
     protected $fillable = ['stuck_id','title', 'price',];
 
-    
+    /*
     public function stuck_id(){
         return $this->belongsTo('App\Stuck');
     }
@@ -23,6 +23,7 @@ class Cart extends Model
     public function price(){
         return $this->belongsTo('App\Stuck');
     }
+    */
     
 }
  
