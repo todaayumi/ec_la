@@ -18,3 +18,4 @@ Route::post('/cart', 'CartController@store');
 Route::post('/', 'StuckController@post');
 Route::get('/cart', 'CartController@show');
 Route::get('/delete', 'CartController@delete');
+Route::get('/drop', 'CartController@drop');

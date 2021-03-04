@@ -15,6 +15,12 @@ class StuckController extends Controller
 
     public function post(Request $request){
 
+        $validator = $request->validate([ 
+            'title' => ['required', 'string'], 
+            'price' => ['required', 'integer'],
+            'caption' => ['required', 'string'],
+        ]);
+
         Stuck::create([
             'title' => $request->title,
             'price' => $request->price,

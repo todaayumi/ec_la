@@ -15,6 +15,15 @@
     <input type="text" class="form-control" name="caption" placeholder="caption">
     <button type="submit" class="btn btn-primary mb-3">OK</button>
     </form>
+    @if ($errors->any())
+    <div class="alert alert-danger">
+    <ul>
+        @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+        @endforeach
+    </ul>
+    </div>
+@endif
     <a href="cart">Go to cart</a>
     <div class="row">
         @foreach($stucks as $stuck)
