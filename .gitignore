@@ -3,6 +3,8 @@
 /public/storage
 /storage/*.key
 /vendor
+ec_la
+ecsite_laravel
 .env
 .env.backup
 .phpunit.result.cache

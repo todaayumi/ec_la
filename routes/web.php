@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'StuckController@index');
+Route::post('/cart', 'CartController@store');
+Route::post('/', 'StuckController@post');
+Route::get('/cart', 'CartController@show');
+Route::get('/delete', 'CartController@delete');
